@@ -427,8 +427,8 @@
       </section>
       <div class="modal-overlay">
         <div class="modal">
-          <a href="" class="modal-back">
-            <svg class="modal-back" width="8" height="8">
+          <a href="" class="modal-back modal-back-ellipse">
+            <svg class="" width="8" height="8">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </a>
@@ -465,7 +465,7 @@
                 <input type="text" id="email" />
               </div>
               <label for="feedback" class="modal-label">Comment</label>
-              <div class="input">
+              <div class="textarea-container">
                 <textarea
                   name="feedback"
                   rows="5"
@@ -479,14 +479,22 @@
           </form>
           <fieldset class="modal-checkbox">
             <input
+              class="checkbox visually-hidden"
               type="checkbox"
-              name="accept-checkbox"
-              value="accept"
+              name="privacy"
+              id="privacy"
+              value="true"
               required
             />
-            <p class="accept-text">
-              I accept the terms and conditions of the Privacy Policy
-            </p>
+            <label class="privacy-label" for="privacy">
+              <span class="custom-checkbox">
+                <svg class="custom-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox-true"></use>
+                </svg>
+              </span>
+              &#8203;I accept the terms and conditions of the
+              <a class="privacy-link" href="#">Privacy Policy</a>
+            </label>
           </fieldset>
           <button type="submit" class="modal-button">Send</button>
         </div>
@@ -536,6 +544,20 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="contact-us">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <div class="text-us-container">
+            <div class="border-email">
+              <input type="text" class="email-input" placeholder="E-mail" />
+            </div>
+            <button class="subscribe-button">
+              Subscribe
+              <svg class="telegram-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
