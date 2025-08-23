@@ -469,7 +469,6 @@
                 <textarea
                   name="feedback"
                   rows="5"
-                  cols=""
                   placeholder="Text input"
                   id="feedback"
                   class="modal-textarea"
@@ -547,17 +546,22 @@
         </div>
         <div class="contact-us">
           <p class="footer-subscribe-text">Subscribe</p>
-          <div class="text-us-container">
-            <div class="border-email">
-              <input type="text" class="email-input" placeholder="E-mail" />
-            </div>
+          <form action="submit" class="text-us-container">
+            <label class="footer-subscribe-text">
+              <input
+                type="text"
+                class="email-input"
+                placeholder="E-mail"
+                name="email"
+              />
+            </label>
             <button class="subscribe-button">
               Subscribe
-              <svg class="telegram-icon" width="24" height="20">
+              <svg class="telegram-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
