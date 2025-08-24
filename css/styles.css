@@ -142,7 +142,7 @@ a {
   color: #f4f4fd;
 }
 .solutions-section {
-  max-width: 1440px;
+  width: 100%;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -439,7 +439,6 @@ a {
 .modal-overlay {
   background-color: #2e2f4266;
   position: fixed;
-  padding: 80px 0 0 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -520,9 +519,6 @@ input.input-container[type='text'] {
   margin-bottom: 4px;
 }
 .modal-inputs {
-  padding: 0;
-  margin: 0;
-  border: none;
   margin-bottom: 8px;
 }
 .modal-checkbox {
@@ -619,6 +615,7 @@ input.input-container[type='text'] {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: transparent;
+  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
