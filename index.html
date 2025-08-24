@@ -501,6 +501,7 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form action="submit">
+          <!-- Name -->
           <div class="modal-inputs">
             <label for="user-name" class="modal-label">Name</label>
             <div class="input-container">
@@ -514,6 +515,10 @@
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="modal-inputs">
             <label for="phone" class="modal-label">Phone</label>
             <div class="input-container">
               <input class="input" type="text" id="phone" name="phone" />
@@ -521,6 +526,10 @@
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
+          </div>
+
+          <!-- Email -->
+          <div class="modal-inputs">
             <label for="email" class="modal-label">Email</label>
             <div class="input-container">
               <input class="input" type="text" id="email" name="email" />
@@ -528,17 +537,21 @@
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
-            <div class="textarea-container">
-              <label for="user-comment" class="modal-label">Comment</label>
-              <textarea
-                name="user-comment"
-                rows="5"
-                placeholder="Text input"
-                id="user-comment"
-                class="modal-textarea"
-              ></textarea>
-            </div>
           </div>
+
+          <!-- Comment -->
+          <div class="textarea-container">
+            <label for="user-comment" class="modal-label">Comment</label>
+            <textarea
+              name="user-comment"
+              rows="5"
+              placeholder="Text input"
+              id="user-comment"
+              class="modal-textarea"
+            ></textarea>
+          </div>
+
+          <!-- Checkbox -->
           <div class="modal-checkbox">
             <input
               class="checkbox visually-hidden"
@@ -554,10 +567,12 @@
                   <use href="./images/icons.svg#icon-checkbox-true"></use>
                 </svg>
               </span>
-              &#8203;I accept the terms and conditions of the
+              I accept the terms and conditions of the
               <a class="privacy-link" href="#">Privacy Policy</a>
             </label>
           </div>
+
+          <!-- Button -->
           <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
